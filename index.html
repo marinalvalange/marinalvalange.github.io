@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aula Gratuita — Reprogramação Sistêmica do Amor</title>
+  <title>Padrões Invisíveis no Amor — Marinalva Lange</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;500&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
   <style>
@@ -24,7 +24,7 @@
       padding: 2rem 1.25rem 3rem;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       background: linear-gradient(160deg, #1a1040 0%, #2e1a5e 45%, #3b1f6e 70%, #1a1040 100%);
       border-radius: 16px;
@@ -46,15 +46,24 @@
     }
 
     .estrelas { font-size: 20px; letter-spacing: 10px; color: #c9a8f0; margin-bottom: 1.2rem; }
-    .label-aula {
-      font-family: 'Cinzel', serif;
-      font-size: 11px; letter-spacing: 4px; color: #c9a8f0;
-      text-transform: uppercase; margin-bottom: 1rem;
+
+    .gancho {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      color: #c9a8f0;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
     }
 
     .titulo-principal {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 38px; font-weight: 300; line-height: 1.2; color: #f0e8ff;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: #f0e8ff;
+      margin-bottom: 0.5rem;
     }
 
     .titulo-destaque {
@@ -88,11 +97,11 @@
       display: inline-block;
       background: linear-gradient(135deg, #7c3aed 0%, #9f5cf7 100%);
       color: #fff;
-      font-family: 'Cinzel', serif;
-      font-size: 13px;
+      font-family: 'Cinzel', serif; font-size: 13px;
       font-weight: 500; letter-spacing: 2px;
       text-decoration: none; padding: 16px 40px;
       border-radius: 100px; border: none; cursor: pointer;
+      box-shadow: 0 4px 24px rgba(124,58,237,0.35);
     }
 
     .nome-assinatura {
@@ -101,7 +110,7 @@
       font-size: 14px; font-style: italic; color: #b89de0; letter-spacing: 1px;
     }
 
-    /* ── SEÇÕES ── */
+    /* SEÇÕES */
     .secao {
       padding: 1.8rem 1.5rem;
       background: rgba(255,255,255,0.04);
@@ -116,27 +125,55 @@
       text-transform: uppercase; margin-bottom: 1.3rem; text-align: center;
     }
 
-    .promessa-lista { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .aprendizado-lista { list-style: none; display: flex; flex-direction: column; gap: 14px; }
 
-    .promessa-lista li {
+    .aprendizado-lista li {
       display: flex; align-items: flex-start; gap: 12px;
-      font-size: 15px; color: #ddd0f5; line-height: 1.65;
+      font-size: 15px; color: #ddd0f5; line-height: 1.7;
     }
 
-    .marca { color: #9f5cf7; flex-shrink: 0; margin-top: 2px; }
+    .marca { flex-shrink: 0; margin-top: 2px; font-size: 16px; }
 
-    .para-quem-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    .destaque-final {
+      margin-top: 18px;
+      background: rgba(159,92,247,0.1);
+      border: 1px solid rgba(159,92,247,0.25);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: #e0ccff;
+      line-height: 1.6;
+      text-align: center;
     }
 
-    .para-quem-item {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(180,140,255,0.12);
-      border-radius: 10px; padding: 14px 16px;
-      font-size: 14px; color: #d8c8f5; line-height: 1.6;
+    /* GANCHO WHATSAPP */
+    .secao-gancho {
+      padding: 2rem 1.5rem;
+      background: linear-gradient(160deg, #1a1040 0%, #2e1a5e 100%);
+      border-radius: 16px;
+      border: 1px solid rgba(180,140,255,0.15);
+      margin-bottom: 1.25rem;
+      text-align: center;
     }
 
-    /* ── SOBRE com foto ── */
+    .gancho-texto {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      font-style: italic;
+      color: #f0e8ff;
+      line-height: 1.5;
+      margin-bottom: 0.6rem;
+    }
+
+    .gancho-sub {
+      font-size: 14px; font-weight: 300; color: #b89de0;
+      margin-bottom: 1.5rem; line-height: 1.6;
+    }
+
+    /* SOBRE */
     .sobre-layout {
       display: flex; align-items: center; gap: 1.5rem;
     }
@@ -153,35 +190,9 @@
       color: #ddd0f5; line-height: 1.85;
     }
 
-    /* ── CTA FINAL ── */
-    .cta-final {
-      text-align: center; padding: 2.5rem 1.5rem;
-      background: linear-gradient(160deg, #1a1040 0%, #2e1a5e 100%);
-      border-radius: 16px; border: 1px solid rgba(180,140,255,0.15);
-    }
-
-    .gratuita-badge {
-      display: inline-block;
-      background: rgba(159,92,247,0.15); color: #c9a8f0;
-      font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px;
-      padding: 5px 16px; border-radius: 100px;
-      border: 1px solid rgba(159,92,247,0.3); margin-bottom: 1.2rem;
-    }
-
-    .cta-final-titulo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 26px; font-weight: 400; font-style: italic;
-      color: #f0e8ff; margin-bottom: 0.4rem;
-    }
-
-    .cta-final-sub {
-      font-size: 14px; font-weight: 300; color: #b89de0; margin-bottom: 1.5rem;
-    }
-
     @media (max-width: 480px) {
-      .para-quem-grid { grid-template-columns: 1fr; }
       .sobre-layout { flex-direction: column; text-align: center; }
-      .titulo-principal { font-size: 30px; }
+      .titulo-principal { font-size: 28px; }
     }
   </style>
 </head>
@@ -190,18 +201,18 @@
 
   <div class="hero">
     <div class="estrelas">✦ ✦ ✦</div>
-    <div class="label-aula">Aula gratuita de lançamento</div>
+    <p class="gancho">Se você já se perguntou por que o amor parece mais difícil para você —</p>
     <h1 class="titulo-principal">
-      Reprogramação Sistêmica<br>
-      <span class="titulo-destaque">do Amor</span>
+      Descubra o que pode estar<br>
+      <span class="titulo-destaque">impedindo você de viver<br>um relacionamento saudável</span>
     </h1>
     <div class="divisor"></div>
     <p class="descricao-hero">
-      Como transformar os padrões herdados que sabotam seus relacionamentos — e criar uma nova história de amor a partir da sua própria linhagem.
+      Uma aula gratuita e ao vivo para mulheres que desejam entender os padrões invisíveis que se repetem no amor — e dar o primeiro passo para transformá-los.
     </p>
     <div class="data-badge">
       <span>🌙</span>
-      <span>Segunda-feira, 01 de junho · 20h</span>
+      <span>Segunda-feira, 26 de maio · 12h12</span>
     </div>
     <br>
     <a href="https://chat.whatsapp.com/JsitG1EBQNiCCCM5ZBtLZm" class="cta-btn">Quero participar</a>
@@ -209,41 +220,35 @@
   </div>
 
   <div class="secao">
-    <p class="secao-titulo">O que você vai aprender</p>
-    <ul class="promessa-lista">
-      <li><span class="marca">✦</span> Por que você repete os mesmos padrões no amor, mesmo quando quer mudar</li>
-      <li><span class="marca">✦</span> Como sua linhagem familiar molda suas escolhas afetivas sem que você perceba</li>
-      <li><span class="marca">✦</span> O que é a Reprogramação Sistêmica do Amor e como ela funciona na prática</li>
-      <li><span class="marca">✦</span> Os primeiros passos para se libertar dessas heranças e construir um amor verdadeiro</li>
+    <p class="secao-titulo">Na aula, você vai descobrir</p>
+    <ul class="aprendizado-lista">
+      <li><span class="marca">✨</span> Por que algumas mulheres atraem homens emocionalmente indisponíveis, mesmo desejando um relacionamento sério.</li>
+      <li><span class="marca">✨</span> O que pode estar por trás da sensação de repetir sempre a mesma história no amor.</li>
+      <li><span class="marca">✨</span> Como experiências da infância e histórias da família podem influenciar suas escolhas afetivas sem que você perceba.</li>
+      <li><span class="marca">✨</span> Por que, muitas vezes, amar parece mais difícil para você do que para outras pessoas.</li>
+      <li><span class="marca">✨</span> O que impede muitas mulheres de relaxarem dentro de uma relação saudável.</li>
+      <li><span class="marca">✨</span> Qual é o primeiro passo para construir um relacionamento mais leve, seguro e recíproco.</li>
     </ul>
+    <div class="destaque-final">
+      💜 E talvez a descoberta mais importante de todas:<br>
+      <strong>o problema pode não estar em você.</strong>
+    </div>
   </div>
 
-  <div class="secao">
-    <p class="secao-titulo">Esta aula é para você que...</p>
-    <div class="para-quem-grid">
-      <div class="para-quem-item">Sente que se perde nos relacionamentos, mesmo amando</div>
-      <div class="para-quem-item">Percebe que atrai sempre o mesmo tipo de pessoa</div>
-      <div class="para-quem-item">Carrega mágoas antigas que nenhuma terapia resolveu por completo</div>
-      <div class="para-quem-item">Quer entender o que vem da sua história — e o que pode mudar</div>
-    </div>
+  <div class="secao-gancho">
+    <p class="gancho-texto">"Se você já se perguntou por que o amor parece mais difícil para você — esse grupo é para você."</p>
+    <p class="gancho-sub">Entre no grupo do WhatsApp, receba o link da aula e comece a entender a sua história antes de todo mundo.</p>
+    <a href="https://chat.whatsapp.com/JsitG1EBQNiCCCM5ZBtLZm" class="cta-btn">Entrar no grupo do WhatsApp</a>
   </div>
 
   <div class="secao">
     <p class="secao-titulo">Sobre Marinalva Lange</p>
     <div class="sobre-layout">
-      <!-- Substitua o src abaixo pelo caminho da sua foto (ex: foto.jpg) -->
       <img src="foto.jpg" alt="Marinalva Lange" class="sobre-foto" />
       <p class="sobre-texto">
         Sou terapeuta sistêmica com 8 anos de experiência em Constelação Familiar, com formação em psicanálise, neurociência e psicopedagogia. Trabalho com mulheres que querem se libertar das heranças que as impedem de amar e serem amadas do jeito que merecem.
       </p>
     </div>
-  </div>
-
-  <div class="cta-final">
-    <div class="gratuita-badge">100% gratuita</div>
-    <p class="cta-final-titulo">Reserve o seu lugar</p>
-    <p class="cta-final-sub">Segunda-feira, 01 de junho às 20h · Ao vivo</p>
-    <a href="https://chat.whatsapp.com/JsitG1EBQNiCCCM5ZBtLZm" class="cta-btn">Entrar no grupo do WhatsApp</a>
   </div>
 
 </div>
